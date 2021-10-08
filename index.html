@@ -19,7 +19,19 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"
+      defer
+      integrity="sha512-L03kznCrNOfVxOUovR6ESfCz9Gfny7gihUX/huVbQB9zjODtYpxaVtIaAkpetoiyV2eqWbvxMH9fiSv5enX7bw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/309/man-astronaut_1f468-200d-1f680.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header class="header">
@@ -61,60 +73,167 @@
 
     <div class="scroll-down-div">
       <img class="scroll-down-img" src=".\img\spa-capsule-entry-2_rotated.png" alt="" data-scroll-down-icon />
-
       <p data-scroll-down-text>scroll down</p>
     </div>
 
     <main class="main">
       <section id="about-section" class="section" data-about-section>
-        <!-- <img class="section-img" src="./img/spa-capsule-entry-2.png" alt="" /> -->
         <h1 class="section-title">About</h1>
         <div class="grid-container">
           <img class="about-photo" src="./img/about-photo.png" alt="" />
-          <p class="about-content">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus culpa ducimus maxime minima incidunt
-            delectus voluptates corrupti dolores, pariatur velit eum quae temporibus ullam rerum tempore asperiores
-            assumenda natus vel non iure cumque ratione amet. Consequatur, nihil obcaecati. Quae tenetur quia
-            accusantium a eum neque cupiditate ratione, non eaque vel!
-          </p>
+          <div class="about-content">
+            <p>
+              Hi, I'm Nathan. Most people call me Nate. I left my career as a Professional Geoscientist in May 2021 and
+              have been learning to code in an effort to change careers and work on projects I am passionate about. I
+              have a strong analytical background from a decade of research and consulting in hydrogeology.
+            </p>
+            <p>
+              I aim to leverage my programming knowledge, along with my interests in personal finance, financial
+              markets, and crypto currency to work for a company building a future I want to live in.
+            </p>
+            <p>
+              Should I include interests here? or something like a list of programming languages and frameworks I am
+              familiar with?
+            </p>
+            <p>
+              Take a look through my <a href="#project-section" target="_blank">projects</a> below, browse my
+              <a href="https://github.com/nmfretz" target="_blank">github</a>, and
+              <a href="#contact-section">contact me</a> if you would like to talk!
+            </p>
+          </div>
         </div>
       </section>
+
       <section id="project-section" class="section">
         <img class="section-img section-img-rotate" src="./img/spa-capsule-entry.png" alt="" />
         <h1 class="section-title">Select Projects</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, laudantium.</p>
-        <div class="flex-container">
-          <div class="project">
-            <div class="project-icon-container"></div>
-            <div class="links">
-              <a href="https://github.com/nmfretz/neopolitan-pizza-calculator" target="_blank">code</a>
-              <a href="https://neopolitan-pizza-calculator.vercel.app/" target="_blank">website</a>
+        <div class="all-projects-container">
+          <div class="project-container">
+            <div class="project-img-container">
+              <div class="computer-container">
+                <div class="computer">
+                  <div class="outer-screen">
+                    <div class="inner-screen">
+                      <a href="./coming-soon.html" target="_blank"
+                        ><img src="./img/financial-dashboard.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="base"></div>
+                </div>
+              </div>
             </div>
-            <p>Pizza Calculator</p>
+            <div class="project-description-container">
+              <div class="project-title">
+                <h1>Financial Dashboard</h1>
+                <a href="./coming-soon.html">code</a>
+                <a href="./coming-soon.html">website</a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus suscipit atque, officia
+                praesentium repellat distinctio est dignissimos hic culpa.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur sed ipsam cum ea animi
+                consectetur rerum iusto corporis tempora dolore aliquid excepturi praesentium molestiae obcaecati,
+                voluptas modi cupiditate laudantium, optio laborum deserunt deleniti. Vel voluptas odit porro commodi
+                dolores incidunt quisquam totam dolore in culpa dolor saepe, magni molestiae.
+              </p>
+              <div class="project-subtitle">
+                <span>Features & Design</span>
+                <span
+                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                  ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
+                ></span>
+              </div>
+
+              <p>📈 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, impedit.</p>
+              <p>💵 Lorem ipsum dolor sit amet consectetur.</p>
+              <p>💰Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi.</p>
+            </div>
           </div>
-          <div class="project">
-            <div class="project-icon-container"></div>
-            <div class="links">
-              <a href="">code</a>
-              <a href="">website</a>
+
+          <div class="project-container">
+            <div class="project-description-container">
+              <div class="project-title">
+                <h1>Pizza Calculator</h1>
+                <a href="https://github.com/nmfretz/neopolitan-pizza-calculator" target="_blank">code</a>
+                <a href="https://neopolitan-pizza-calculator.vercel.app/" target="_blank">website</a>
+              </div>
+              <p>A simple app to calculate the amount of ingredients needed to make neopolitan-style pizza dough.</p>
+              <p>
+                I use this to make gluten dough for friends and family and gluten-free dough for myself. Default water
+                content values are based on an oven temp of 550F (289degC), personal preference, and specific
+                environmental variables.
+              </p>
+              <div class="project-subtitle">
+                <span>Features & Design</span>
+                <span
+                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                  ><i class="fa-brands fa-js-square"></i
+                ></span>
+              </div>
+
+              <p>⚖️ Calculates ingredients based on baker's percentage.</p>
+              <p>🌾 Tab between gluten and gluten-free calculator.</p>
             </div>
-            <p>Car List App</p>
+            <div class="project-img-container">
+              <div class="computer-container">
+                <div class="computer">
+                  <div class="outer-screen">
+                    <div class="inner-screen">
+                      <a href="https://neopolitan-pizza-calculator.vercel.app/" target="_blank"
+                        ><img src="./img/pizza-calculator.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="base"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="project">
-            <div class="project-icon-container"></div>
-            <div class="links">
-              <a href="">code</a>
-              <a href="">website</a>
+
+          <div class="project-container">
+            <div class="project-img-container">
+              <div class="computer-container">
+                <div class="computer">
+                  <div class="outer-screen">
+                    <div class="inner-screen">
+                      <a href="https://tar-list.netlify.app/" target="_blank"
+                        ><img src="./img/tar-list.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="base"></div>
+                </div>
+              </div>
             </div>
-            <p>Financial Dashboard</p>
-          </div>
-          <div class="project">
-            <div class="project-icon-container"></div>
-            <div class="links">
-              <a href="">code</a>
-              <a href="">website</a>
+            <div class="project-description-container">
+              <div class="project-title">
+                <h1>Car List App</h1>
+                <a href="https://github.com/nmfretz/tar-list" target="_blank">code</a>
+                <a href="https://tar-list.netlify.app/" target="_blank">website</a>
+              </div>
+              <p>My first app! This is an app I developed while first learning HTML/CSS/JavaScript/Node.js.</p>
+              <p>
+                My twin toddlers (1.5 years old when I developed this app) are obsessed with vehicles, so I developed an
+                app for us to explore and store their favourites in a fun way!
+              </p>
+              <div class="project-subtitle">
+                <span>Features & Design</span>
+                <span
+                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                  ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
+                ></span>
+              </div>
+
+              <p>🐶 Fetches images from FLICKR API based on user search.</p>
+              <p>🧠 In-memory cache to limit API calls</p>
+              <p>📋 List items persist in local storage</p>
+              <p>🍦 Vanilla CSS (no framework used)</p>
+              <p>📣 Interactive car image in header</p>
+              <p>🚒 Choose your vehicle, driver, and ranking!</p>
             </div>
-            <p>Web3/Crypto Project</p>
           </div>
         </div>
       </section>
@@ -122,11 +241,44 @@
       <section id="contact-section" class="section">
         <img class="section-img" src="./img/spa-capsule-landing.png" alt="" />
         <h1 class="section-title">Contact</h1>
-        <a href="mailto:nmfretz@gmail.com">nmfretz@gmail.com</a>
-        <div class="contact-form"></div>
+        <div class="contact-icons">
+          <a href="https://twitter.com/nmfretz" target="blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/nfretz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="copy-email" data-tooltip="click to copy email address" data-copy-email href=""
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+        <span>or</span>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+          <img src="./img/spa-dish.png" alt="" />
+          <div class="input-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="input-field">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="input-field">
+            <label for="message">Message</label>
+            <!-- <textarea id="message" name="message" cols="30" rows="15"></textarea> -->
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button class="contact-form-btn" type="submit">Send Message</button>
+        </form>
       </section>
     </main>
 
-    Icons made by <a href="https://www.pixellove.com" title="PixelLove">PixelLove</a>
+    <span class="attribution">
+      Space-themed icons made by <a href="https://www.pixellove.com" title="PixelLove">PixelLove</a>
+    </span>
+    <!-- <div class="code-icons">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-js-square"></i>
+      <i class="fa-brands fa-node-js"></i>
+      <i class="fa-brands fa-bitcoin"></i>
+      <i class="fa-brands fa-ethereum"></i>
+    </div> -->
   </body>
 </html>
