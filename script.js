@@ -31,7 +31,7 @@ copyEmailElement.addEventListener("mouseover", (e) => {
 function copyEmailToClipboard() {
   const emailAddress = "nmfretz@gmail.com";
   navigator.clipboard.writeText(emailAddress);
-  copyEmailElement.dataset.tooltip = `${emailAddress} copied to clipboard`;
+  copyEmailElement.dataset.tooltip = `'${emailAddress}' copied to clipboard`;
 }
 
 function changeTooltipColor() {

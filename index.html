@@ -33,7 +33,7 @@
       type="image/x-icon"
     />
   </head>
-  <body>
+  <body id="top">
     <header class="header">
       <div class="logo">
         <h1 class="logo-text">Nathan Fretz</h1>
@@ -89,15 +89,17 @@
             </p>
             <p>
               I aim to leverage my programming knowledge, along with my interests in personal finance, financial
-              markets, and crypto currency to work for a company building a future I want to live in.
+              markets, and cryptocurrency to work for a company building a future I believe in.
             </p>
             <p>
-              Should I include interests here? or something like a list of programming languages and frameworks I am
-              familiar with?
+              <!-- I have built projects using HTML/CSS and javasctipt/nodejs. Both front-end and server-side. -->
+              <!-- Should I include interests here? or something like a list of programming languages and frameworks I am
+              familiar with? -->
             </p>
+            <!-- <p>My general interests include finance and investing, spaceflight, ...</p> -->
             <p>
-              Take a look through my <a href="#project-section" target="_blank">projects</a> below, browse my
-              <a href="https://github.com/nmfretz" target="_blank">github</a>, and
+              Take a look through my <a href="#project-section" target="_blank">projects</a> below, download my
+              <a href="#">CV</a>, browse my <a href="https://github.com/nmfretz" target="_blank">github</a>, and
               <a href="#contact-section">contact me</a> if you would like to talk!
             </p>
           </div>
@@ -125,14 +127,11 @@
             </div>
             <div class="project-description-container">
               <div class="project-title">
-                <h1>Financial Dashboard</h1>
-                <a href="./coming-soon.html">code</a>
-                <a href="./coming-soon.html">website</a>
+                <h1>Investment Portfolio</h1>
+                <a href="https://github.com/nmfretz" target="_blank">code</a>
+                <a href="./coming-soon.html" target="_blank">website</a>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus suscipit atque, officia
-                praesentium repellat distinctio est dignissimos hic culpa.
-              </p>
+              <p>A full-stack website I designed and built to track stock and cryto assets.</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur sed ipsam cum ea animi
                 consectetur rerum iusto corporis tempora dolore aliquid excepturi praesentium molestiae obcaecati,
@@ -147,9 +146,15 @@
                 ></span>
               </div>
 
-              <p>📈 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, impedit.</p>
-              <p>💵 Lorem ipsum dolor sit amet consectetur.</p>
-              <p>💰Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi.</p>
+              <p>
+                🥞 Full stack application using JavaScript for the front-end, Node and Express for the server, and
+                MongoDB for the database.
+              </p>
+              <p>🐶 Fetches stock price data from Yahoo Finance API...</p>
+              <p>🐕‍🦺 Fetches company financial data from crypto-asset prices from...</p>
+              <p>🐕 Fetches company financial data from HyperChange</p>
+              <p>Database and authentication?</p>
+              <p>📉 ChartJS library for graphing data</p>
             </div>
           </div>
 
@@ -199,15 +204,42 @@
                 <div class="computer">
                   <div class="outer-screen">
                     <div class="inner-screen">
-                      <a href="https://tar-list.netlify.app/" target="_blank"
-                        ><img src="./img/tar-list.png" alt=""
-                      /></a>
+                      <a href="./coming-soon.html" target="_blank"><img src="./img/norberts-gambit.png" alt="" /></a>
                     </div>
                   </div>
                   <div class="base"></div>
                 </div>
               </div>
             </div>
+            <div class="project-description-container">
+              <div class="project-title">
+                <h1>Norbert's Gambit Calculator</h1>
+                <a href="https://github.com/nmfretz/norberts-gambit" target="_blank">code</a>
+                <a href="./coming-soon.html" target="blank">website</a>
+              </div>
+              <p>
+                A simple app to help execute Norbert's Gambit and convert between USD and CAD using a brokerage account.
+              </p>
+              <p>
+                I based this calculator off a post by
+                <a href="https://wealthsavvy.ca/norberts-gambit-questrade/" target="_blank">walthsavvy</a>.
+              </p>
+              <div class="project-subtitle">
+                <span>Features & Design</span>
+                <span
+                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                  ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
+                ></span>
+              </div>
+
+              <p>🐶 Fetches exchange rate and stock price data from Alpha Vantage API.</p>
+              <p>🏃‍♀️ Express back-end server to manage API requests</p>
+              <p>🧠 In-memory cache to limit API calls.</p>
+              <p>💀 Skeleton CSS used as simple CSS boilerplate.</p>
+            </div>
+          </div>
+
+          <div class="project-container">
             <div class="project-description-container">
               <div class="project-title">
                 <h1>Car List App</h1>
@@ -228,11 +260,26 @@
               </div>
 
               <p>🐶 Fetches images from FLICKR API based on user search.</p>
+              <p>🏃‍♀️ Express back-end server to manage API requests</p>
               <p>🧠 In-memory cache to limit API calls</p>
               <p>📋 List items persist in local storage</p>
               <p>🍦 Vanilla CSS (no framework used)</p>
               <p>📣 Interactive car image in header</p>
               <p>🚒 Choose your vehicle, driver, and ranking!</p>
+            </div>
+            <div class="project-img-container">
+              <div class="computer-container">
+                <div class="computer">
+                  <div class="outer-screen">
+                    <div class="inner-screen">
+                      <a href="https://tar-list.netlify.app/" target="_blank"
+                        ><img src="./img/tar-list.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="base"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -248,7 +295,7 @@
             ><i class="fa-solid fa-envelope"></i
           ></a>
         </div>
-        <span>or</span>
+        <span class="or-message">or message me below</span>
         <form class="contact-form" name="contact" method="POST" data-netlify="true">
           <img src="./img/spa-dish.png" alt="" />
           <div class="input-field">
@@ -261,7 +308,6 @@
           </div>
           <div class="input-field">
             <label for="message">Message</label>
-            <!-- <textarea id="message" name="message" cols="30" rows="15"></textarea> -->
             <textarea id="message" name="message"></textarea>
           </div>
           <button class="contact-form-btn" type="submit">Send Message</button>
@@ -269,16 +315,12 @@
       </section>
     </main>
 
-    <span class="attribution">
-      Space-themed icons made by <a href="https://www.pixellove.com" title="PixelLove">PixelLove</a>
-    </span>
-    <!-- <div class="code-icons">
-      <i class="fa-brands fa-html5"></i>
-      <i class="fa-brands fa-css3-alt"></i>
-      <i class="fa-brands fa-js-square"></i>
-      <i class="fa-brands fa-node-js"></i>
-      <i class="fa-brands fa-bitcoin"></i>
-      <i class="fa-brands fa-ethereum"></i>
-    </div> -->
+    <footer class="footer">
+      <a href="#top"><img class="back-to-top" src="./img/spa-rocket.png" alt="" /></a>
+      <p>back to top</p>
+      <p class="attribution">
+        Space-themed icons made by <a href="https://www.pixellove.com" target="_blank" title="PixelLove">PixelLove</a>
+      </p>
+    </footer>
   </body>
 </html>

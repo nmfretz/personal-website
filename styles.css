@@ -83,6 +83,7 @@ body {
   flex-direction: column;
   gap: 10rem;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .main .section {
@@ -273,12 +274,15 @@ body {
   transform-origin: top center;
 }
 
+.or-message {
+  padding: 1rem;
+}
+
 .contact-form {
   width: 600px;
-  /* height: 500px; */
   border: 1px solid black;
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   padding: 2rem 4rem;
   background-color: #eee;
 }
@@ -323,8 +327,21 @@ form img {
   /* border-color: #999; */
 }
 
+/* FOOTER MATERIAL */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back-to-top {
+  width: 50px;
+  transform: rotate(-45deg);
+}
+
 .attribution {
   font-size: 0.7rem;
+  padding-top: 1rem;
 }
 
 /* COMPUTER */
