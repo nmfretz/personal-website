@@ -4,6 +4,10 @@ const SCROLL_ICON_END_REM = 32.5; // final top of scrollDownIcon in rem
 const scrollDownIcon = document.querySelector("[data-scroll-down-icon]");
 const scrollDownText = document.querySelector("[data-scroll-down-text]");
 
+window.addEventListener("load", () => {
+  console.log("loaded");
+});
+
 window.addEventListener("scroll", (e) => {
   let scrollOffset = window.pageYOffset;
 
