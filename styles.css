@@ -4,11 +4,6 @@
   --tooltip-color: #333;
 }
 
-html {
-  /* removed for now because clicking links is janky */
-  /* scroll-behavior: smooth; */
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,11 +16,13 @@ body {
 
 .header {
   padding-top: 4em;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .logo {
   /* font-size: 3.5rem; */
-  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  font-size: clamp(1.4rem, 5vw, 3.5rem);
   display: flex;
   justify-content: center;
 }
@@ -48,15 +45,12 @@ body {
   list-style: none;
 }
 
-.icon-div {
-  /* width: 300px; */
-}
-
 .icon-list {
   /* background-color: blue; */
   display: flex;
   justify-content: center;
   /* gap: 3rem; */
+  padding-left: 0px;
   gap: clamp(1rem, 3vw, 3rem);
 
   /* width: 500px; */
@@ -73,13 +67,12 @@ body {
   width: clamp(50px, 10vw, 110px);
 }
 
-.icon-list li {
-  font-weight: 500;
+.icon.needs-centering {
+  margin-left: 0.4rem;
 }
 
-.icon-list div li:last-child {
-  /* margin-left: 1rem; */
-  /* color: #406177; */
+.icon-list li {
+  font-weight: 500;
 }
 
 .scroll-down-div {
@@ -152,14 +145,14 @@ body {
 }
 
 .about-photo {
-  grid-area: img;
+  /* grid-area: img; */
   width: 350px;
   padding: 1rem;
 }
 
 .about-content {
   width: 600px;
-  grid-area: content;
+  /* grid-area: content; */
   padding: 1rem;
 }
 
@@ -189,21 +182,20 @@ body {
 
 .project-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
 }
 
 .project-img-container {
   width: 600px;
   padding: 1rem;
-  background-color: #999;
-  background-color: #979dac;
-  background-color: #2c4251;
-  background-color: #406177;
-
+  /* background-color: #999; */
+  /* background-color: #979dac; */
+  /* background-color: #2c4251; */
   /* background-color: #c3979f; */
   /* background-color: #3e5c76; */
   /* background-color: #1d2d44; */
+  background-color: #406177;
 
   display: flex;
   align-items: center;
@@ -211,7 +203,6 @@ body {
 }
 
 .project-img-container img {
-  /* border: 1px solid black; */
   width: 100%;
   cursor: n-resize;
 }
@@ -219,16 +210,13 @@ body {
 .project-description-container {
   width: 600px;
   padding: 2em;
-  background-color: #eee;
-  background-color: #d3d9d3;
-  background-color: #f7f3f4;
-  background-color: #e0e0e0;
-
-  /* background-color: #; */
-
+  /* background-color: #eee; */
+  /* background-color: #d3d9d3; */
+  /* background-color: #f7f3f4; */
   /* background-color: #dac1bc; */
   /* background-color: #1d2d44; */
   /* background-color: #3e5c76; */
+  background-color: #e0e0e0;
 }
 
 .project-description-container p {
@@ -237,15 +225,30 @@ body {
   /* font-size: 1rem; */
 }
 
+.project-description-container ul {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+.project-description-container li {
+  padding-bottom: 0.3rem;
+}
+
 .project-title {
   display: flex;
-  gap: 1rem;
-  align-items: center;
+  /* gap: 1rem; */
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project-title h1 {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.code-website-links {
+  display: flex;
+  gap: 1rem;
 }
 
 .project-title a {
@@ -388,9 +391,10 @@ form img {
   align-items: center;
 }
 
-.back-to-top {
+.back-to-top-icon {
   width: 50px;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
 .attribution {
@@ -456,11 +460,63 @@ form img {
   background-color: #333;
 }
 
-@media screen and (max-width: 601px) {
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1225px) {
+  .project-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 600px;
+    grid-template-rows: 600px;
+    grid-template-areas:
+      "project-image"
+      "project-description";
+  }
+
+  .project-img-container {
+    grid-area: project-image;
+  }
+
+  .project-description-container {
+    grid-area: project-description;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .project-container {
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vw;
+  }
+
   .project-img-container,
   .project-description-container,
-  .about-content,
-  .contact-form {
+  .about-content {
     width: 90%;
+  }
+
+  .about-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .project-description-container {
+    /* padding: 1rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .project-title {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.3rem;
+  }
+
+  .contact-form {
+    padding: 1rem 1.5rem;
+    width: 90vw;
+  }
+
+  .hidden-on-mobile {
+    display: none;
   }
 }

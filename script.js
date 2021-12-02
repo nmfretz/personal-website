@@ -19,6 +19,11 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
+const backToTopIcon = document.querySelector("[data-back-to-top-icon]");
+backToTopIcon.addEventListener("click", (e) => {
+  window.scroll({ top: 0, behavior: "smooth" });
+});
+
 const copyEmailElement = document.querySelector("[data-copy-email]");
 
 copyEmailElement.addEventListener("click", (e) => {

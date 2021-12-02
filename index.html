@@ -41,34 +41,32 @@
     </header>
 
     <section class="icon-section">
-      <div class="icon-div">
-        <ul class="icon-list">
-          <div class="about">
-            <a href="#about-section">
-              <li><img class="icon" src="./img/spa-astronaut.png" alt="" /></li>
-              <li>About</li>
-            </a>
-          </div>
-          <div class="projects">
-            <a href="#project-section">
-              <li><img class="icon" src="./img/spa-death-star-2.png" alt="" /></li>
-              <li>Projects</li>
-            </a>
-          </div>
-          <div class="github">
-            <a href="https://github.com/nmfretz" target="_blank">
-              <li><img class="icon" src="./img/spa-alien-2.png" alt="" /></li>
-              <li>Github</li>
-            </a>
-          </div>
-          <div class="contact">
-            <a href="#contact-section">
-              <li><img class="icon" src="./img/spa-satellite.png" alt="" /></li>
-              <li>Contact</li>
-            </a>
-          </div>
-        </ul>
-      </div>
+      <ul class="icon-list">
+        <div class="about">
+          <a href="#about-section">
+            <li><img class="icon needs-centering" src="./img/spa-astronaut.png" alt="" /></li>
+            <li>About</li>
+          </a>
+        </div>
+        <div class="projects">
+          <a href="#project-section">
+            <li><img class="icon needs-centering" src="./img/spa-death-star-2.png" alt="" /></li>
+            <li>Projects</li>
+          </a>
+        </div>
+        <div class="github">
+          <a href="https://github.com/nmfretz" target="_blank">
+            <li><img class="icon" src="./img/spa-alien-2.png" alt="" /></li>
+            <li>Github</li>
+          </a>
+        </div>
+        <div class="contact">
+          <a href="#contact-section">
+            <li><img class="icon" src="./img/spa-satellite.png" alt="" /></li>
+            <li>Contact</li>
+          </a>
+        </div>
+      </ul>
     </section>
 
     <div class="scroll-down-div">
@@ -112,6 +110,7 @@
       <section id="project-section" class="section">
         <img class="section-img section-img-rotate" src="./img/spa-capsule-entry.png" alt="" />
         <h1 class="section-title">Select Projects</h1>
+        <!-- <p>Back to Top</p> -->
         <div class="all-projects-container">
           <div class="project-container">
             <div class="project-img-container">
@@ -131,8 +130,10 @@
             <div class="project-description-container">
               <div class="project-title">
                 <h1>Investment Dashboard</h1>
-                <a href="https://github.com/nmfretz/investment-dashboard" target="_blank">code</a>
-                <a href="https://investment-dashboard.netlify.app" target="_blank">website</a>
+                <div class="code-website-links">
+                  <a href="https://github.com/nmfretz/investment-dashboard" target="_blank">code</a>
+                  <a href="https://investment-dashboard.netlify.app" target="_blank">website</a>
+                </div>
               </div>
               <p>
                 An investment dashboard for tracking a portfolio of stocks and cryptoassets. The user can view company
@@ -140,9 +141,10 @@
               </p>
               <div class="project-subtitle">
                 <span>Features & Design</span>
-                <span
+                <span class="hidden-on-mobile"
                   ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
+                  ><i class="fa-brands fa-react"></i><i class="fa-brands fa-js-square"></i
+                  ><i class="fa-brands fa-node-js"></i
                 ></span>
               </div>
 
@@ -171,7 +173,7 @@
                   Asset portfolio persists in local storage. Database (MongoDB) currently in development to make this
                   application full stack.
                 </li>
-                <li>Express library for backend server/routing. Express-slow-down and cors middlewares</li>
+                <li>Express library for backend server/routing. Express-slow-down and cors middlewares.</li>
               </ul>
             </div>
           </div>
@@ -180,8 +182,10 @@
             <div class="project-description-container">
               <div class="project-title">
                 <h1>Pizza Calculator</h1>
-                <a href="https://github.com/nmfretz/neopolitan-pizza-calculator" target="_blank">code</a>
-                <a href="https://neopolitan-pizza-calculator.vercel.app/" target="_blank">website</a>
+                <div class="code-website-links">
+                  <a href="https://github.com/nmfretz/neopolitan-pizza-calculator" target="_blank">code</a>
+                  <a href="https://neopolitan-pizza-calculator.vercel.app/" target="_blank">website</a>
+                </div>
               </div>
               <p>A simple app to calculate the amount of ingredients needed to make neopolitan-style pizza dough.</p>
               <p>
@@ -191,7 +195,7 @@
               </p>
               <div class="project-subtitle">
                 <span>Features & Design</span>
-                <span
+                <span class="hidden-on-mobile"
                   ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
                   ><i class="fa-brands fa-js-square"></i
                 ></span>
@@ -235,8 +239,10 @@
             <div class="project-description-container">
               <div class="project-title">
                 <h1>Norbert's Gambit Calculator</h1>
-                <a href="https://github.com/nmfretz/norberts-gambit" target="_blank">code</a>
-                <a href="https://norberts-gambit.vercel.app/" target="blank">website</a>
+                <div class="code-website-links">
+                  <a href="https://github.com/nmfretz/norberts-gambit" target="_blank">code</a>
+                  <a href="https://norberts-gambit.vercel.app/" target="blank">website</a>
+                </div>
               </div>
               <p>
                 A simple app to help execute Norbert's Gambit and convert between USD and CAD using a brokerage account.
@@ -247,7 +253,7 @@
               </p>
               <div class="project-subtitle">
                 <span>Features & Design</span>
-                <span
+                <span class="hidden-on-mobile"
                   ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
                   ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
                 ></span>
@@ -266,8 +272,10 @@
             <div class="project-description-container">
               <div class="project-title">
                 <h1>Car List App</h1>
-                <a href="https://github.com/nmfretz/tar-list" target="_blank">code</a>
-                <a href="https://tar-list.netlify.app/" target="_blank">website</a>
+                <div class="code-website-links">
+                  <a href="https://github.com/nmfretz/tar-list" target="_blank">code</a>
+                  <a href="https://tar-list.netlify.app/" target="_blank">website</a>
+                </div>
               </div>
               <p>My first app! This is an app I developed while first learning HTML/CSS/JavaScript/Node.js.</p>
               <p>
@@ -276,7 +284,7 @@
               </p>
               <div class="project-subtitle">
                 <span>Features & Design</span>
-                <span
+                <span class="hidden-on-mobile"
                   ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
                   ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
                 ></span>
@@ -340,7 +348,7 @@
     </main>
 
     <footer class="footer">
-      <a href="#top"><img class="back-to-top" src="./img/spa-rocket.png" alt="" /></a>
+      <a><img class="back-to-top-icon" src="./img/spa-rocket.png" alt="" data-back-to-top-icon /></a>
       <p>back to top</p>
       <p class="attribution">
         Space-themed icons made by <a href="https://www.pixellove.com" target="_blank" title="PixelLove">PixelLove</a>
