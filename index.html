@@ -41,7 +41,7 @@
     </header>
 
     <section class="icon-section">
-      <div>
+      <div class="icon-div">
         <ul class="icon-list">
           <div class="about">
             <a href="#about-section">
@@ -72,12 +72,14 @@
     </section>
 
     <div class="scroll-down-div">
-      <img class="scroll-down-img" src=".\img\spa-capsule-entry-2_rotated.png" alt="" data-scroll-down-icon />
+      <img class="scroll-down-img" src=".\img\spa-capsule-entry-2_rotated.png" alt="" data-scroll-down-icon-top />
       <p data-scroll-down-text>scroll down</p>
     </div>
 
     <main class="main">
       <section id="about-section" class="section" data-about-section>
+        <img class="scroll-down-img" src=".\img\spa-capsule-entry-2_rotated.png" alt="" data-scroll-down-icon-bottom />
+
         <h1 class="section-title">About</h1>
         <div class="grid-container">
           <img class="about-photo" src="./img/about-photo.png" alt="" />
@@ -89,7 +91,7 @@
             </p>
             <p>
               I aim to leverage my programming knowledge, along with my interests in personal finance, financial
-              markets, and cryptocurrency to work for a company building a future I believe in.
+              markets, economics, and cryptocurrency to work for a company building a future I believe in.
             </p>
             <p>
               <!-- I have built projects using HTML/CSS and javasctipt/nodejs. Both front-end and server-side. -->
@@ -98,8 +100,9 @@
             </p>
             <!-- <p>My general interests include finance and investing, spaceflight, ...</p> -->
             <p>
-              Take a look through my <a href="#project-section">projects</a> below, download my <a href="#">CV</a>,
-              browse my <a href="https://github.com/nmfretz" target="_blank">github</a>, and
+              Take a look through my <a href="#project-section">projects</a> below, download my
+              <a href="#">CV</a> (coming soon), browse my
+              <a href="https://github.com/nmfretz" target="_blank">github</a>, and
               <a href="#contact-section">contact me</a> if you would like to talk!
             </p>
           </div>
@@ -143,27 +146,33 @@
                 ></span>
               </div>
 
-              <p>🐕 Fetches data from multiple APIs (HyperCharts, Alpha Vantage, Coin Cap, Yahoo Finance).</p>
-              <!-- <ul>
-                <li>HyperCharts for company financials</li>
-                <li>Alpha Vantage for stock price history</li>
+              <ul>
+                <li>React framework for frontend build.</li>
+                <li>Fetches data from multiple APIs (HyperCharts, Alpha Vantage, Coin Cap, Nomics, Yahoo Finance).</li>
+                <!-- <ul>
+                  <li>HyperCharts for company financials</li>
+                  <li>Alpha Vantage for stock price history</li>
                 <li>Coin Cap for crypto symbol search and crypto price history</li>
                 <li>Yahoo Finance for stock ticker search, current stock price, and exchange rates</li>
               </ul> -->
-              <p>🧠 In-memory cache to limit API calls</p>
-              <p>💱 MoneyJS package used for currency conversion</p>
-              <p>📊 Chart.js package used for graphing portfolio value, company financials, and asset price history</p>
-              <ul>
-                <li>View all company financials available through HyperCharts (e.g., revenue segments, cash flow)</li>
-                <li>View historical stock/crypto prices by time range</li>
+                <li>
+                  Chart.js library used for graphing portfolio breakdown, company financials, and asset price history.
+                </li>
+                <!-- <ul>
                 <li>Doughnut chart of portfolio holdings</li>
+                <li>View all company financials available through HyperCharts (e.g., revenue segments, cash flow)</li>
+                <li>View historical stock and crypto prices by time range</li>
+              </ul> -->
+                <li>money.js library used for currency conversion (yahoo API for actual exchange rates)</li>
+                <li>Search functionality for stocks and crypto assets</li>
+                <li>Financial and price data cached to limit API calls</li>
+                <li>Bulma.io CSS framework</li>
+                <li>
+                  Asset portfolio persists in local storage. Database (MongoDB) currently in development to make this
+                  application full stack.
+                </li>
+                <li>Express library for backend server/routing. Express-slow-down and cors middlewares</li>
               </ul>
-              <p>🔭 Search functionality for stocks and crypto assets</p>
-              <p>🐮 Bulma.io CSS framework</p>
-              <p>
-                📋 Asset portfolio persists in local storage. Database ( MongoDB) currently in development to make this
-                application full stack 🥞.
-              </p>
             </div>
           </div>
 
@@ -178,7 +187,7 @@
               <p>
                 I use this to make gluten dough for friends and family and gluten-free dough for myself. Default water
                 content values are based on an oven temp of 550F (289degC), personal preference, and specific
-                environmental variables.
+                environmental variables. Calculates ingredients based on baker's percentage.
               </p>
               <div class="project-subtitle">
                 <span>Features & Design</span>
@@ -187,9 +196,10 @@
                   ><i class="fa-brands fa-js-square"></i
                 ></span>
               </div>
-
-              <p>⚖️ Calculates ingredients based on baker's percentage.</p>
-              <p>🌾 Tab between gluten and gluten-free calculator.</p>
+              <ul>
+                <li>Vanilla JavaScript.</li>
+                <li>Bulma.io CSS framework</li>
+              </ul>
             </div>
             <div class="project-img-container">
               <div class="computer-container">
@@ -213,7 +223,9 @@
                 <div class="computer">
                   <div class="outer-screen">
                     <div class="inner-screen">
-                      <a href="./coming-soon.html" target="_blank"><img src="./img/norberts-gambit.png" alt="" /></a>
+                      <a href="https://norberts-gambit.vercel.app/" target="_blank"
+                        ><img src="./img/norberts-gambit.png" alt=""
+                      /></a>
                     </div>
                   </div>
                   <div class="base"></div>
@@ -240,11 +252,13 @@
                   ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
                 ></span>
               </div>
-
-              <p>🐶 Fetches exchange rate and stock price data from Yahoo Finance API.</p>
-              <p>🏃‍♀️ Express back-end server to manage API requests</p>
-              <p>🧠 In-memory cache to limit API calls.</p>
-              <p>💀 Skeleton CSS used as simple CSS boilerplate.</p>
+              <ul>
+                <li>Fetches exchange rate and stock price data from Yahoo Finance API.</li>
+                <li>Express back-end server to manage API requests</li>
+                <li>In-memory cache to limit API calls.</li>
+                <li>Vanilla JavaScript</li>
+                <li>Skeleton CSS used as simple CSS boilerplate.</li>
+              </ul>
             </div>
           </div>
 
@@ -267,14 +281,15 @@
                   ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
                 ></span>
               </div>
-
-              <p>🐶 Fetches images from FLICKR API based on user search.</p>
-              <p>🏃‍♀️ Express back-end server to manage API requests</p>
-              <p>🧠 In-memory cache to limit API calls</p>
-              <p>📋 List items persist in local storage</p>
-              <p>🍦 Vanilla CSS (no framework used)</p>
-              <p>📣 Interactive car image in header</p>
-              <p>🚒 Choose your vehicle, driver, and ranking!</p>
+              <ul>
+                <li>Fetches images from FLICKR API based on user search.</li>
+                <li>Express back-end server to manage API requests</li>
+                <li>In-memory cache to limit API calls</li>
+                <li>List items persist in local storage</li>
+                <li>Vanilla JavaScript and CSS (no frameworks used)</li>
+                <li>Interactive car image in header</li>
+                <li>Choose your vehicle, driver, and ranking!</li>
+              </ul>
             </div>
             <div class="project-img-container">
               <div class="computer-container">

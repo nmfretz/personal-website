@@ -5,7 +5,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* removed for now because clicking links is janky */
+  /* scroll-behavior: smooth; */
 }
 
 * {
@@ -19,11 +20,12 @@ body {
 }
 
 .header {
-  padding-top: 4rem;
+  padding-top: 4em;
 }
 
 .logo {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
   display: flex;
   justify-content: center;
 }
@@ -33,7 +35,8 @@ body {
 }
 
 .icon-section {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
+  margin-top: clamp(1rem, 4vw, 3rem);
 }
 
 .icon-section a {
@@ -45,10 +48,18 @@ body {
   list-style: none;
 }
 
+.icon-div {
+  /* width: 300px; */
+}
+
 .icon-list {
+  /* background-color: blue; */
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  /* gap: 3rem; */
+  gap: clamp(1rem, 3vw, 3rem);
+
+  /* width: 500px; */
 }
 
 .icon-list a {
@@ -58,7 +69,8 @@ body {
 }
 
 .icon {
-  width: 110px;
+  /* width: 110px; */
+  width: clamp(50px, 10vw, 110px);
 }
 
 .icon-list li {
@@ -83,8 +95,11 @@ body {
   position: relative;
 }
 
+.scroll-down-img-invisible {
+  visibility: hidden;
+}
+
 .main {
-  /* approx landing for scroll image */
   margin-top: 30rem;
   display: flex;
   flex-direction: column;
@@ -132,6 +147,7 @@ body {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
   /* width: 1200px; */
 }
 
@@ -174,6 +190,7 @@ body {
 .project-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-img-container {
@@ -217,6 +234,7 @@ body {
 .project-description-container p {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  /* font-size: 1rem; */
 }
 
 .project-title {
@@ -438,10 +456,11 @@ form img {
   background-color: #333;
 }
 
-/* MEDIA QUERIES */
-/* @media screen and (max-width: 768px) {
-  .project-container {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 601px) {
+  .project-img-container,
+  .project-description-container,
+  .about-content,
+  .contact-form {
+    width: 90%;
   }
-} */
+}
