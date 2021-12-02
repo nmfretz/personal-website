@@ -1,6 +1,6 @@
 # Personal Website
 
-A personal website to showcase select projects and function as an online resumé.
+:man_astronaut: A personal website to showcase select projects and function as an online resumé.
 
 Website currently deployed at https://www.nathanfretz.me/
 
@@ -17,6 +17,7 @@ Website currently deployed at https://www.nathanfretz.me/
 
 - Update About section with actual photo.
 - Consider adding accent colour to Header section.
+- Add back-to-top links throughout main section.
 
 # Screenshots
 
