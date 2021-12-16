@@ -5,7 +5,9 @@ const scrollDownIconTop = document.querySelector("[data-scroll-down-icon-top]");
 const scrollDownIconBottom = document.querySelector("[data-scroll-down-icon-bottom]");
 const scrollDownText = document.querySelector("[data-scroll-down-text]");
 
-window.addEventListener("scroll", (e) => {
+// TWO DIFFERENT METHODS FOR ANIMATING THE CAPSULE ON SCROLL
+// 1) requestAnimationFrame
+function scrollCapsule() {
   let scrollOffset = window.pageYOffset;
   scrollDownIconTop.style.transform = `translateY(${scrollOffset / PX_TO_REM}rem)`;
   scrollDownText.style.opacity = -scrollOffset / 75 + 1;
@@ -17,12 +19,29 @@ window.addEventListener("scroll", (e) => {
     scrollDownIconTop.classList.remove("scroll-down-img-invisible");
     scrollDownIconBottom.classList.add("scroll-down-img-invisible");
   }
-});
+  window.requestAnimationFrame(scrollCapsule);
+}
+window.requestAnimationFrame(scrollCapsule);
 
 const backToTopIcon = document.querySelector("[data-back-to-top-icon]");
 backToTopIcon.addEventListener("click", (e) => {
   window.scroll({ top: 0, behavior: "smooth" });
 });
+
+// 2) scroll addEventListener
+// window.addEventListener("scroll", (e) => {
+//   let scrollOffset = window.pageYOffset;
+//   scrollDownIconTop.style.transform = `translateY(${scrollOffset / PX_TO_REM}rem)`;
+//   scrollDownText.style.opacity = -scrollOffset / 75 + 1;
+
+//   if (scrollOffset >= SCROLL_ICON_END_REM * PX_TO_REM) {
+//     scrollDownIconTop.classList.add("scroll-down-img-invisible");
+//     scrollDownIconBottom.classList.remove("scroll-down-img-invisible");
+//   } else {
+//     scrollDownIconTop.classList.remove("scroll-down-img-invisible");
+//     scrollDownIconBottom.classList.add("scroll-down-img-invisible");
+//   }
+// });
 
 const copyEmailElement = document.querySelector("[data-copy-email]");
 
