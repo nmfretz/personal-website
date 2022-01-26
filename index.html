@@ -156,20 +156,9 @@
               <ul>
                 <li>React framework for frontend build.</li>
                 <li>Fetches data from multiple APIs (HyperCharts, Alpha Vantage, Coin Cap, Nomics, Yahoo Finance).</li>
-                <!-- <ul>
-                  <li>HyperCharts for company financials</li>
-                  <li>Alpha Vantage for stock price history</li>
-                <li>Coin Cap for crypto symbol search and crypto price history</li>
-                <li>Yahoo Finance for stock ticker search, current stock price, and exchange rates</li>
-              </ul> -->
                 <li>
                   Chart.js library used for graphing portfolio breakdown, company financials, and asset price history.
                 </li>
-                <!-- <ul>
-                <li>Doughnut chart of portfolio holdings</li>
-                <li>View all company financials available through HyperCharts (e.g., revenue segments, cash flow)</li>
-                <li>View historical stock and crypto prices by time range</li>
-              </ul> -->
                 <li>money.js library used for currency conversion (yahoo API for actual exchange rates)</li>
                 <li>Search functionality for stocks and crypto assets</li>
                 <li>Financial and price data cached to limit API calls</li>
@@ -184,6 +173,61 @@
           </div>
 
           <div class="project-container">
+            <div class="project-description-container">
+              <div class="project-title">
+                <h1>Ethereum NFT Project</h1>
+                <div class="code-website-links">
+                  <a href="https://github.com/nmfretz/whoopsie-derpies-nft" target="_blank">code</a>
+                  <a href="https://whoopsiederpies.netlify.app/" target="_blank">website</a>
+                </div>
+              </div>
+              <p>
+                An NFT art collection project deployed to the ethereum <strong>rinkeby</strong> testnet. Inspired by
+                drawing animals for my twin toddlers whilst getting bumped around and receiving conflicting requests.
+              </p>
+              <div class="project-subtitle">
+                <span>Features & Design</span>
+                <span class="hidden-on-mobile"
+                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                  ><i class="fa-brands fa-js-square"></i
+                ></span>
+              </div>
+              <ul>
+                <li>Smart contract written in Solidity, and follows the ERC721 Non-Fungible Token Standard.</li>
+                <li>Inherits from OpenZeppelin's ERC721Enumerable and Ownable interfaces.</li>
+                <li>
+                  Inherits from Chainlink's VRFConsumerBase to obtain verifiable random numbers on-chain and assign a
+                  random animal with the result.
+                </li>
+                <li>Metadata and images are stored on IPFS and pinned using Pinata.</li>
+                <li>Hardhat development environment used for compiling, testing, and deployment.</li>
+
+                <li>React framework for frontend build.</li>
+                <li>ethers.js library for interacting with Ethereum.</li>
+                <li>
+                  Error handling and notifications to help the user navigate the wait-times associated with blockchains
+                  and oracles.
+                </li>
+                <li>Bulma.io CSS framework</li>
+              </ul>
+            </div>
+            <div class="project-img-container">
+              <div class="computer-container">
+                <div class="computer">
+                  <div class="outer-screen">
+                    <div class="inner-screen">
+                      <a href="https://whoopsiederpies.netlify.app/" target="_blank"
+                        ><img src="./img/whoopsie-derpies.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="base"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="project-container">
             <div class="project-description-container">
               <div class="project-title">
                 <h1>Pizza Calculator</h1>
@@ -224,7 +268,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="project-container">
             <div class="project-img-container">
@@ -282,7 +326,10 @@
                   <a href="https://tar-list.netlify.app/" target="_blank">website</a>
                 </div>
               </div>
-              <p>My first app! This is an app I developed while first learning HTML/CSS/JavaScript/Node.js.</p>
+              <p>
+                My first app! This is an app I developed while first learning HTML/CSS/JavaScript/Node.js. I have
+                included this project here to showcase my progress since developing this app in August 2021.
+              </p>
               <p>
                 My twin toddlers (1.5 years old when I developed this app) are obsessed with vehicles, so I developed an
                 app for us to explore and store their favourites in a fun way!
