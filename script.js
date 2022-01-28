@@ -23,10 +23,16 @@ function scrollCapsule() {
 }
 window.requestAnimationFrame(scrollCapsule);
 
-const backToTopIcon = document.querySelector("[data-back-to-top-icon]");
-backToTopIcon.addEventListener("click", (e) => {
-  window.scroll({ top: 0, behavior: "smooth" });
+const backToTopIcons = [...document.querySelectorAll("[data-back-to-top-icon]")];
+backToTopIcons.forEach((icon) => {
+  icon.addEventListener("click", (e) => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  });
 });
+
+// backToTopIcon.addEventListener("click", (e) => {
+//   window.scroll({ top: 0, behavior: "smooth" });
+// });
 
 // 2) scroll addEventListener
 // window.addEventListener("scroll", (e) => {
