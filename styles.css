@@ -10,7 +10,6 @@
 }
 
 body {
-  /* font-family: "Trispace", sans-serif; */
   font-family: "Trispace", sans-serif;
   line-height: 1.5;
 }
@@ -147,7 +146,7 @@ body {
 
 .about-photo {
   /* grid-area: img; */
-  width: 350px;
+  width: 380px;
   padding: 1rem;
 }
 
