@@ -15,9 +15,10 @@ Website currently deployed at https://www.nathanfretz.me/
 
 ### TODOS
 
-- Update About section with actual photo.
-- Consider adding accent colour to Header section.
-- Add back-to-top links throughout main section.
+- [x] Update About section with actual photo.
+- [x] Add CV link
+- [ ] Consider adding accent colour or background-design to Header section.
+- [ ] Add back-to-top links in the main section.
 
 # Screenshots
 
