@@ -15,10 +15,11 @@ Website currently deployed at https://www.nathanfretz.me/
 
 ### TODOS
 
+- [ ] Less top/bottom padding on computer div in project section
 - [x] Update About section with actual photo.
 - [x] Add CV link
 - [ ] Consider adding accent colour or background-design to Header section.
-- [ ] Add back-to-top links in the main section.
+- [x] Add back-to-top links in the main section.
 
 # Screenshots
 
