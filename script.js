@@ -13,11 +13,11 @@ function scrollCapsule() {
   scrollDownText.style.opacity = -scrollOffset / 75 + 1;
 
   if (scrollOffset >= SCROLL_ICON_END_REM * PX_TO_REM) {
-    scrollDownIconTop.classList.add("scroll-down-img-invisible");
-    scrollDownIconBottom.classList.remove("scroll-down-img-invisible");
+    scrollDownIconTop.classList.add("visibility-hidden");
+    scrollDownIconBottom.classList.remove("visibility-hidden");
   } else {
-    scrollDownIconTop.classList.remove("scroll-down-img-invisible");
-    scrollDownIconBottom.classList.add("scroll-down-img-invisible");
+    scrollDownIconTop.classList.remove("visibility-hidden");
+    scrollDownIconBottom.classList.add("visibility-hidden");
   }
   window.requestAnimationFrame(scrollCapsule);
 }
@@ -41,11 +41,11 @@ backToTopIcons.forEach((icon) => {
 //   scrollDownText.style.opacity = -scrollOffset / 75 + 1;
 
 //   if (scrollOffset >= SCROLL_ICON_END_REM * PX_TO_REM) {
-//     scrollDownIconTop.classList.add("scroll-down-img-invisible");
-//     scrollDownIconBottom.classList.remove("scroll-down-img-invisible");
+//     scrollDownIconTop.classList.add("visibility-hidden");
+//     scrollDownIconBottom.classList.remove("visibility-hidden");
 //   } else {
-//     scrollDownIconTop.classList.remove("scroll-down-img-invisible");
-//     scrollDownIconBottom.classList.add("scroll-down-img-invisible");
+//     scrollDownIconTop.classList.remove("visibility-hidden");
+//     scrollDownIconBottom.classList.add("visibility-hidden");
 //   }
 // });
 

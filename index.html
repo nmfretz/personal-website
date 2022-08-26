@@ -49,542 +49,387 @@
     />
   </head>
   <body id="top">
-    <header class="header">
-      <div class="logo">
-        <h1 class="logo-text">Nathan Fretz</h1>
+    <header class="padding-top-800">
+      <div class="container">
+        <h1 class="header-title">Nathan Fretz</h1>
+
+        <nav class="navigation">
+          <ul role="list" class="nav-list">
+            <li>
+              <a href="#about-section">
+                <img class="nav-icon needs-shifting" src="./img/spa-astronaut.png" alt="astronaut" />
+                <p>About</p>
+              </a>
+            </li>
+            <li>
+              <a href="#project-section">
+                <img class="nav-icon needs-shifting" src="./img/spa-death-star-2.png" alt="death star" />
+                <p>Projects</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/nmfretz" target="_blank">
+                <img class="nav-icon" src="./img/spa-alien-2.png" alt="alien" />
+                <p>Github</p>
+              </a>
+            </li>
+            <li>
+              <a href="./cv/cv.pdf" target="_blank">
+                <img class="nav-icon" src="./img/spa-moon-flag.png" alt="flag on the moon" />
+                <p>CV</p>
+              </a>
+            </li>
+            <li>
+              <a href="#contact-section">
+                <img class="nav-icon" src="./img/spa-satellite.png" alt="satellite" />
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="margin-top-900 display-flex flex-direction-column align-items-center">
+          <img
+            class="scroll-down-img"
+            src=".\img\spa-capsule-entry-2_rotated.png"
+            alt="space capsule entering atmosphere"
+            data-scroll-down-icon-top
+          />
+          <p data-scroll-down-text>scroll down</p>
+        </div>
       </div>
     </header>
 
-    <section class="icon-section">
-      <ul class="icon-list">
-        <div class="about">
-          <a href="#about-section">
-            <li><img class="icon needs-centering" src="./img/spa-astronaut.png" alt="" /></li>
-            <li>About</li>
-          </a>
-        </div>
-        <div class="projects">
-          <a href="#project-section">
-            <li><img class="icon needs-centering" src="./img/spa-death-star-2.png" alt="" /></li>
-            <li>Projects</li>
-          </a>
-        </div>
-        <div class="github">
-          <a href="https://github.com/nmfretz" target="_blank">
-            <li><img class="icon" src="./img/spa-alien-2.png" alt="" /></li>
-            <li>Github</li>
-          </a>
-        </div>
-        <div class="cv">
-          <a href="./cv/cv.pdf" target="_blank">
-            <li><img class="icon" src="./img/spa-moon-flag.png" alt="" /></li>
-            <li>CV</li>
-          </a>
-        </div>
-        <div class="contact">
-          <a href="#contact-section">
-            <li><img class="icon" src="./img/spa-satellite.png" alt="" /></li>
-            <li>Contact</li>
-          </a>
-        </div>
-      </ul>
-    </section>
+    <main class="margin-top-900x3 margin-bottom-700">
+      <section id="about-section" data-about-section>
+        <div class="container | display-flex flex-direction-column align-items-center">
+          <img
+            class="scroll-down-img"
+            src=".\img\spa-capsule-entry-2_rotated.png"
+            alt="space capsule entering atmosphere"
+            data-scroll-down-icon-bottom
+          />
 
-    <div class="scroll-down-div">
-      <img class="scroll-down-img" src=".\img\spa-capsule-entry-2_rotated.png" alt="" data-scroll-down-icon-top />
-      <p data-scroll-down-text>scroll down</p>
-    </div>
+          <h1 class="fs-700 fw-semi-bold padding-400 text-uppercase">About</h1>
+          <div class="display-flex flex-wrap-wrap justify-content-center gap-400">
+            <div>
+              <img class="about-photo" src="./img/about-photo.JPG" alt="Nathan Fretz" />
+            </div>
 
-    <main class="main">
-      <section id="about-section" class="section" data-about-section>
-        <img class="scroll-down-img" src=".\img\spa-capsule-entry-2_rotated.png" alt="" data-scroll-down-icon-bottom />
-
-        <h1 class="section-title">About</h1>
-        <div class="grid-container">
-          <div>
-            <img class="about-photo" src="./img/about-photo.JPG" alt="" />
-          </div>
-
-          <div class="about-content">
-            <p>
-              Hi, I'm Nathan. Most people call me Nate. I chose to leave a fast tracked career as a Professional
-              Geoscientist in May 2021 and have since been honing my coding skills in an effort to change careers. I am
-              interested in working for companies at the intersection of technology and finance that are building a
-              future I believe in.
-            </p>
-            <p>
-              I am passionate about personal finance and investing, economics, Bitcoin, and decentralized blockchains. I
-              have a strong analytical background from a decade of research and consulting in hydrogeology.
-            </p>
-            <p>
-              I am not tied to specific programming languages and frameworks; I am a self-motivated learner continually
-              expanding my programming knowledge. I am currently working with JavaScript (including React), Node.js,
-              Python, Solidity (including hardhat), HTML, CSS (including frameworks), and Git. Take a look through my
-              <a href="#project-section">projects</a> below, browse my
-              <a href="https://github.com/nmfretz" target="_blank">github</a>, download my
-              <a href="./cv/cv.pdf" target="_blank">CV</a>, and <a href="#contact-section">contact me</a> if you would
-              like to talk!
-            </p>
+            <div class="about-content">
+              <p class="margin-bottom-400">
+                Hi, I'm Nathan. Most people call me Nate. I chose to leave a fast tracked career as a Professional
+                Geoscientist in May 2021 and have since been honing my coding skills in an effort to change careers. I
+                am interested in working for companies at the intersection of technology and finance that are building a
+                future I believe in.
+              </p>
+              <p class="margin-bottom-400">
+                I am passionate about personal finance and investing, economics, Bitcoin, and decentralized blockchains.
+                I have a strong analytical background from a decade of research and consulting in hydrogeology.
+              </p>
+              <p class="margin-bottom-400">
+                I am not tied to specific programming languages and frameworks; I am a self-motivated learner
+                continually expanding my programming knowledge. I am currently working with JavaScript (including
+                React), Node.js, Python, Solidity (including hardhat), HTML, CSS (including frameworks), and Git. Take a
+                look through my
+                <a href="#project-section">projects</a> below, browse my
+                <a href="https://github.com/nmfretz" target="_blank">github</a>, download my
+                <a href="./cv/cv.pdf" target="_blank">CV</a>, and <a href="#contact-section">contact me</a> if you would
+                like to talk!
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="project-section" class="section">
-        <img class="section-img section-img-rotate" src="./img/spa-capsule-entry.png" alt="" />
-        <h1 class="section-title">Select Projects</h1>
+      <section id="project-section" class="margin-top-900">
+        <div class="container | display-flex flex-direction-column align-items-center">
+          <img
+            class="section-header-img section-header-img-rotate"
+            src="./img/spa-capsule-entry.png"
+            alt="space capsule entering atmosphere"
+          />
+          <h1 class="fs-700 fw-semi-bold padding-400 text-uppercase">Select Projects</h1>
 
-        <div class="all-projects-container">
-          <!-- SQWORDLE -->
-          <div class="project-container">
-            <div class="project-img-container">
-              <div class="computer-container">
-                <div class="computer">
-                  <div class="outer-screen">
-                    <div class="inner-screen inner-screen-sqwordle">
-                      <a href="https://www.sqwordle.io/" target="_blank"><img src="./img/sqwordle.png" alt="" /></a>
+          <div class="display-flex margin-top-600 flex-direction-column align-items-center gap-700">
+            <!-- SQWORDLE -->
+            <div class="project-container">
+              <div class="project-img-container">
+                <div class="computer-container">
+                  <div class="computer">
+                    <div class="outer-screen">
+                      <div class="inner-screen inner-screen-sqwordle">
+                        <a href="https://www.sqwordle.io/" target="_blank"
+                          ><img src="./img/sqwordle.png" alt="Sqwordle website"
+                        /></a>
+                      </div>
                     </div>
+                    <div class="base"></div>
                   </div>
-                  <div class="base"></div>
+                </div>
+              </div>
+              <div class="project-description-container">
+                <div class="project-title">
+                  <h1>Sqwordle</h1>
+                  <div class="code-website-links">
+                    <a href="https://github.com/nmfretz/sqwordle" target="_blank">code</a>
+                    <a href="https://www.sqwordle.io/" target="blank">website</a>
+                  </div>
+                </div>
+                <p>
+                  <span>A daily Pokémon guessing game, inspired by the popular game </span
+                  ><a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a> by
+                  <a href="https://twitter.com/powerlanguish" target="_blank">Josh Wardle</a
+                  ><span>. The game is currently played by around 2000 people each day.</span>
+                </p>
+                <div class="project-subtitle">
+                  <span>Features & Design</span>
+                  <span class="hidden-on-mobile"
+                    ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                    ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
+                  ></span>
+                </div>
+                <ul>
+                  <li>React for frontend build.</li>
+                  <li>Bulma.io CSS framework + custom CSS.</li>
+                  <li>PokéApi for Pokémon data.</li>
+                  <li>
+                    User statistics, gym badge achievements, and daily game state persist in either local storage or a
+                    database depending on whether a user creates an account.
+                  </li>
+                  <li>
+                    Firebase for optional user authentication and database to prevent user data from being lost if/when
+                    browser memory is cleared.
+                  </li>
+                  <li>react-i18next internationalization framework used to manage multiple language translations.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- INVESTMENT DASHBOARD -->
+            <div class="project-container">
+              <div class="project-description-container">
+                <div class="project-title">
+                  <h1>Investment Dashboard</h1>
+                  <div class="code-website-links">
+                    <a href="https://github.com/nmfretz/investment-dashboard" target="_blank">code</a>
+                    <a href="https://investment-dashboard.netlify.app" target="_blank">website</a>
+                  </div>
+                </div>
+                <p>
+                  An investment dashboard for tracking a portfolio of stocks and cryptoassets. The user can view company
+                  financials and price history for stocks and cryptoassets.
+                </p>
+                <div class="project-subtitle">
+                  <span>Features & Design</span>
+                  <span class="hidden-on-mobile"
+                    ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                    ><i class="fa-brands fa-react"></i><i class="fa-brands fa-js-square"></i
+                    ><i class="fa-brands fa-node-js"></i
+                  ></span>
+                </div>
+
+                <ul>
+                  <li>React for frontend build.</li>
+                  <li>
+                    Fetches data from multiple APIs (HyperCharts, Alpha Vantage, Coin Cap, Nomics, Yahoo Finance).
+                  </li>
+                  <li>
+                    Chart.js library used for graphing portfolio breakdown, company financials, and asset price history.
+                  </li>
+                  <li>money.js library used for currency conversion (yahoo API for actual exchange rates)</li>
+                  <li>Search functionality for stocks and crypto assets</li>
+                  <li>Financial and price data cached to limit API calls</li>
+                  <li>Bulma.io CSS framework</li>
+                  <li>Asset portfolio persists in local storage.</li>
+                  <li>Express library for backend server/routing. Express-slow-down and cors middlewares.</li>
+                </ul>
+              </div>
+              <div class="project-img-container">
+                <div class="computer-container">
+                  <div class="computer">
+                    <div class="outer-screen">
+                      <div class="inner-screen">
+                        <a href="https://investment-dashboard.netlify.app" target="_blank"
+                          ><img src="./img/financial-dashboard.png" alt="financial dashboard website"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="base"></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="project-description-container">
-              <div class="project-title">
-                <h1>Sqwordle</h1>
-                <div class="code-website-links">
-                  <a href="https://github.com/nmfretz/sqwordle" target="_blank">code</a>
-                  <a href="https://www.sqwordle.io/" target="blank">website</a>
+
+            <div class="display-flex flex-direction-column align-items-center">
+              <a><img class="back-to-top-img" src="./img/spa-rocket.png" alt="rocket" data-back-to-top-icon /></a>
+              <p>Need a ride to the top?</p>
+            </div>
+
+            <!-- ERC1155 ETHEREUM MAINNET -->
+            <div class="project-container">
+              <div class="project-img-container">
+                <div class="computer-container">
+                  <div class="computer">
+                    <div class="outer-screen">
+                      <div class="inner-screen">
+                        <a href="https://www.whoopsiederpies.xyz" target="_blank">
+                          <img src="./img/whoopsie-derpies.png" alt="erc1155 website" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="base"></div>
+                  </div>
                 </div>
               </div>
-              <p>
-                <span>A daily Pokémon guessing game, inspired by the popular game </span
-                ><a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a> by
-                <a href="https://twitter.com/powerlanguish" target="_blank">Josh Wardle</a
-                ><span>. The game is currently played by around 2000 people each day.</span>
-              </p>
-              <div class="project-subtitle">
-                <span>Features & Design</span>
-                <span class="hidden-on-mobile"
-                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
-                ></span>
+              <div class="project-description-container">
+                <div class="project-title">
+                  <h1>ERC1155 - Ethereum Mainnet</h1>
+                  <div class="code-website-links">
+                    <a href="https://github.com/nmfretz/whoopsie-derpies-erc1155" target="_blank">code</a>
+                    <a href="https://www.whoopsiederpies.xyz" target="_blank">website</a>
+                  </div>
+                </div>
+                <p>
+                  A hand-drawn art collection that lives on the Ethereum blockchain as ERC1155 tokens. Inspired by
+                  drawing animals for my twin toddlers whilst getting bumped around and receiving conflicting requests.
+                  The animals are cute and just a little bit derpy.
+                </p>
+                <div class="project-subtitle">
+                  <span>Features & Design</span>
+                  <span class="hidden-on-mobile"
+                    ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                    ><i class="fa-brands fa-react"></i><i class="fa-brands fa-js-square"></i
+                    ><i class="fa-solid fa-helmet-safety"></i><i class="fa-brands fa-ethereum"></i
+                  ></span>
+                </div>
+                <ul>
+                  <li>Smart contract written in Solidity; follows the ERC1155 Multi Token Standard.</li>
+                  <li>Inherits from OpenZeppelin's ERC1155 and Ownable contracts and interfaces.</li>
+                  <li>
+                    The contract was written with high network fees in mind. Effort was made to lower the gas cost to
+                    mint, while maintaining security with battle-tested contracts. Minting a single Derpie costs
+                    approximately 38,000 gas compared to contracts like Bored Ape Yacht Club that cost approximately
+                    150,000 gas.
+                  </li>
+
+                  <li>Metadata and images are stored on IPFS and pinned using Pinata.</li>
+                  <li>Hardhat development environment used for compiling, testing, and deployment.</li>
+
+                  <li>React for frontend build.</li>
+                  <li>ethers.js and Moralis libraries for interacting with Ethereum.</li>
+                  <li>
+                    Error handling and notifications to help the user navigate the wait-times associated with
+                    blockchains.
+                  </li>
+                  <li>Bulma.io CSS framework</li>
+                </ul>
               </div>
-              <ul>
-                <li>React for frontend build.</li>
-                <li>Bulma.io CSS framework + custom CSS.</li>
-                <li>PokéApi for Pokémon data.</li>
-                <li>
-                  User statistics, gym badge achievements, and daily game state persist in either local storage or a
-                  database depending on whether a user creates an account.
-                </li>
-                <li>
-                  Firebase for optional user authentication and database to prevent user data from being lost if/when
-                  browser memory is cleared.
-                </li>
-                <li>react-i18next internationalization framework used to manage multiple language translations.</li>
-              </ul>
+            </div>
+
+            <!-- SHARED BALANCE TRACKER -->
+            <div class="project-container">
+              <div class="project-description-container">
+                <div class="project-title">
+                  <h1>Shared Balance Tracker</h1>
+                  <div class="code-website-links">
+                    <a href="https://github.com/nmfretz/shared-balance-tracker" target="_blank">code</a>
+                    <a href="https://skippertracker.surge.sh/" target="blank">website</a>
+                  </div>
+                </div>
+                <p>A dashboard for tracking costs in a shared membership to a seafood co-op.</p>
+
+                <div class="project-subtitle">
+                  <span>Features & Design</span>
+                  <span class="hidden-on-mobile"
+                    ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
+                    ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
+                  ></span>
+                </div>
+                <ul>
+                  <li>React and Bootstrap for frontend.</li>
+                  <li>React Router for client-side routing.</li>
+                  <li>Firebase for user authentication (google sign in) and database (cloud firestore).</li>
+                  <li>
+                    Database security rules allow read-access to any authenticated user; however, only certain
+                    white-listed users have write access.
+                  </li>
+                </ul>
+              </div>
+              <div class="project-img-container">
+                <div class="computer-container">
+                  <div class="computer">
+                    <div class="outer-screen">
+                      <div class="inner-screen">
+                        <a href="https://skippertracker.surge.sh/" target="_blank"
+                          ><img src="./img/balance-tracker.png" alt="shared balance tracker website"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="base"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <!-- INVESTMENT DASHBOARD -->
-          <div class="project-container">
-            <div class="project-description-container">
-              <div class="project-title">
-                <h1>Investment Dashboard</h1>
-                <div class="code-website-links">
-                  <a href="https://github.com/nmfretz/investment-dashboard" target="_blank">code</a>
-                  <a href="https://investment-dashboard.netlify.app" target="_blank">website</a>
-                </div>
-              </div>
-              <p>
-                An investment dashboard for tracking a portfolio of stocks and cryptoassets. The user can view company
-                financials and price history for stocks and cryptoassets.
-              </p>
-              <div class="project-subtitle">
-                <span>Features & Design</span>
-                <span class="hidden-on-mobile"
-                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-react"></i><i class="fa-brands fa-js-square"></i
-                  ><i class="fa-brands fa-node-js"></i
-                ></span>
-              </div>
-
-              <ul>
-                <li>React for frontend build.</li>
-                <li>Fetches data from multiple APIs (HyperCharts, Alpha Vantage, Coin Cap, Nomics, Yahoo Finance).</li>
-                <li>
-                  Chart.js library used for graphing portfolio breakdown, company financials, and asset price history.
-                </li>
-                <li>money.js library used for currency conversion (yahoo API for actual exchange rates)</li>
-                <li>Search functionality for stocks and crypto assets</li>
-                <li>Financial and price data cached to limit API calls</li>
-                <li>Bulma.io CSS framework</li>
-                <li>Asset portfolio persists in local storage.</li>
-                <li>Express library for backend server/routing. Express-slow-down and cors middlewares.</li>
-              </ul>
-            </div>
-            <div class="project-img-container">
-              <div class="computer-container">
-                <div class="computer">
-                  <div class="outer-screen">
-                    <div class="inner-screen">
-                      <a href="https://investment-dashboard.netlify.app" target="_blank"
-                        ><img src="./img/financial-dashboard.png" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                  <div class="base"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mid-page-back-to-top-icon">
-            <a><img class="back-to-top-icon" src="./img/spa-rocket.png" alt="" data-back-to-top-icon /></a>
-            <p>Need a ride to the top?</p>
-          </div>
-
-          <!-- ERC1155 ETHEREUM MAINNET -->
-          <div class="project-container">
-            <div class="project-img-container">
-              <div class="computer-container">
-                <div class="computer">
-                  <div class="outer-screen">
-                    <div class="inner-screen">
-                      <a href="https://www.whoopsiederpies.xyz" target="_blank">
-                        <img src="./img/whoopsie-derpies.png" alt="" />
-                        <!-- <img src="./img/whoopsie-derpies-2.png" alt="" /> -->
-                      </a>
-                    </div>
-                  </div>
-                  <div class="base"></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-description-container">
-              <div class="project-title">
-                <h1>ERC1155 - Ethereum Mainnet</h1>
-                <div class="code-website-links">
-                  <a href="https://github.com/nmfretz/whoopsie-derpies-erc1155" target="_blank">code</a>
-                  <a href="https://www.whoopsiederpies.xyz" target="_blank">website</a>
-                </div>
-              </div>
-              <p>
-                A hand-drawn art collection that lives on the Ethereum blockchain as ERC1155 tokens. Inspired by drawing
-                animals for my twin toddlers whilst getting bumped around and receiving conflicting requests. The
-                animals are cute and just a little bit derpy.
-              </p>
-              <div class="project-subtitle">
-                <span>Features & Design</span>
-                <span class="hidden-on-mobile"
-                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-react"></i><i class="fa-brands fa-js-square"></i
-                  ><i class="fa-solid fa-helmet-safety"></i><i class="fa-brands fa-ethereum"></i
-                ></span>
-              </div>
-              <ul>
-                <li>Smart contract written in Solidity; follows the ERC1155 Multi Token Standard.</li>
-                <li>Inherits from OpenZeppelin's ERC1155 and Ownable contracts and interfaces.</li>
-                <li>
-                  The contract was written with high network fees in mind. Effort was made to lower the gas cost to
-                  mint, while maintaining security with battle-tested contracts. Minting a single Derpie costs
-                  approximately 38,000 gas compared to contracts like Bored Ape Yacht Club that cost approximately
-                  150,000 gas.
-                </li>
-
-                <li>Metadata and images are stored on IPFS and pinned using Pinata.</li>
-                <li>Hardhat development environment used for compiling, testing, and deployment.</li>
-
-                <li>React for frontend build.</li>
-                <li>ethers.js and Moralis libraries for interacting with Ethereum.</li>
-                <li>
-                  Error handling and notifications to help the user navigate the wait-times associated with blockchains.
-                </li>
-                <li>Bulma.io CSS framework</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- SHARED BALANCE TRACKER -->
-          <div class="project-container">
-            <div class="project-description-container">
-              <div class="project-title">
-                <h1>Shared Balance Tracker</h1>
-                <div class="code-website-links">
-                  <a href="https://github.com/nmfretz/shared-balance-tracker" target="_blank">code</a>
-                  <a href="https://skippertracker.surge.sh/" target="blank">website</a>
-                </div>
-              </div>
-              <p>A dashboard for tracking costs in a shared membership to a seafood co-op.</p>
-
-              <div class="project-subtitle">
-                <span>Features & Design</span>
-                <span class="hidden-on-mobile"
-                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
-                ></span>
-              </div>
-              <ul>
-                <li>React and Bootstrap for frontend.</li>
-                <li>React Router for client-side routing.</li>
-                <li>Firebase for user authentication (google sign in) and database (cloud firestore).</li>
-                <li>
-                  Database security rules allow read-access to any authenticated user; however, only certain
-                  white-listed users have write access.
-                </li>
-              </ul>
-            </div>
-            <div class="project-img-container">
-              <div class="computer-container">
-                <div class="computer">
-                  <div class="outer-screen">
-                    <div class="inner-screen">
-                      <a href="https://skippertracker.surge.sh/" target="_blank"
-                        ><img src="./img/balance-tracker.png" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                  <div class="base"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- OLD PROJECTS -->
-
-          <!-- NORBERTS GAMBIT -->
-          <!-- <div class="project-container">
-            <div class="project-description-container">
-              <div class="project-title">
-                <h1>Norbert's Gambit Calculator</h1>
-                <div class="code-website-links">
-                  <a href="https://github.com/nmfretz/norberts-gambit" target="_blank">code</a>
-                  <a href="https://norberts-gambit.vercel.app/" target="blank">website</a>
-                </div>
-              </div>
-              <p>
-                A simple app to help execute Norbert's Gambit and convert between USD and CAD using a brokerage account.
-              </p>
-              <p>
-                I based this calculator off a post by
-                <a href="https://wealthsavvy.ca/norberts-gambit-questrade/" target="_blank">walthsavvy</a>.
-              </p>
-              <div class="project-subtitle">
-                <span>Features & Design</span>
-                <span class="hidden-on-mobile"
-                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
-                ></span>
-              </div>
-              <ul>
-                <li>Fetches exchange rate and stock price data from Yahoo Finance API.</li>
-                <li>Express back-end server to manage API requests</li>
-                <li>In-memory cache to limit API calls.</li>
-                <li>Vanilla JavaScript</li>
-                <li>Skeleton CSS used as simple CSS boilerplate.</li>
-              </ul>
-            </div>
-            <div class="project-img-container">
-              <div class="computer-container">
-                <div class="computer">
-                  <div class="outer-screen">
-                    <div class="inner-screen">
-                      <a href="https://norberts-gambit.vercel.app/" target="_blank"
-                        ><img src="./img/norberts-gambit.png" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                  <div class="base"></div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- ERC721 ETHEREUM RINKEBY TESTNET -->
-          <!-- <div class="project-container">
-            <div class="project-description-container">
-              <div class="project-title">
-                <h1>Ethereum NFT Project</h1>
-                <div class="code-website-links">
-                  <a href="https://github.com/nmfretz/whoopsie-derpies-nft" target="_blank">code</a>
-                  <a href="https://whoopsiederpies.netlify.app/" target="_blank">website</a>
-                </div>
-              </div>
-              <p>
-                An NFT art collection project deployed to the ethereum <strong>rinkeby</strong> testnet. Inspired by
-                drawing animals for my twin toddlers whilst getting bumped around and receiving conflicting requests.
-              </p>
-              <div class="project-subtitle">
-                <span>Features & Design</span>
-                <span class="hidden-on-mobile"
-                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-react"></i><i class="fa-brands fa-js-square"></i
-                  ><i class="fa-solid fa-helmet-safety"></i><i class="fa-brands fa-ethereum"></i
-                ></span>
-              </div>
-              <ul>
-                <li>Smart contract written in Solidity; follows the ERC721 Non-Fungible Token Standard.</li>
-                <li>Inherits from OpenZeppelin's ERC721Enumerable and Ownable interfaces.</li>
-                <li>
-                  Inherits from Chainlink's VRFConsumerBase to obtain verifiable random numbers on-chain and assign a
-                  random animal with the result.
-                </li>
-                <li>Metadata and images are stored on IPFS and pinned using Pinata.</li>
-                <li>Hardhat development environment used for compiling, testing, and deployment.</li>
-
-                <li>React for frontend build.</li>
-                <li>ethers.js library for interacting with Ethereum.</li>
-                <li>
-                  Error handling and notifications to help the user navigate the wait-times associated with blockchains
-                  and oracles.
-                </li>
-                <li>Bulma.io CSS framework</li>
-              </ul>
-            </div>
-            <div class="project-img-container">
-              <div class="computer-container">
-                <div class="computer">
-                  <div class="outer-screen">
-                    <div class="inner-screen">
-                      <a href="https://whoopsiederpies.netlify.app/" target="_blank"
-                        ><img src="./img/whoopsie-derpies.png" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                  <div class="base"></div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- PIZZA CALCULATOR -->
-          <!-- <div class="project-container">
-            <div class="project-description-container">
-              <div class="project-title">
-                <h1>Pizza Calculator</h1>
-                <div class="code-website-links">
-                  <a href="https://github.com/nmfretz/neopolitan-pizza-calculator" target="_blank">code</a>
-                  <a href="https://neopolitan-pizza-calculator.vercel.app/" target="_blank">website</a>
-                </div>
-              </div>
-              <p>A simple app to calculate the amount of ingredients needed to make neopolitan-style pizza dough.</p>
-              <p>
-                I use this to make gluten dough for friends and family and gluten-free dough for myself. Default water
-                content values are based on an oven temp of 550F (289degC), personal preference, and specific
-                environmental variables. Calculates ingredients based on baker's percentage.
-              </p>
-              <div class="project-subtitle">
-                <span>Features & Design</span>
-                <span class="hidden-on-mobile"
-                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-js-square"></i
-                ></span>
-              </div>
-              <ul>
-                <li>Vanilla JavaScript.</li>
-                <li>Bulma.io CSS framework</li>
-              </ul>
-            </div>
-            <div class="project-img-container">
-              <div class="computer-container">
-                <div class="computer">
-                  <div class="outer-screen">
-                    <div class="inner-screen">
-                      <a href="https://neopolitan-pizza-calculator.vercel.app/" target="_blank"
-                        ><img src="./img/pizza-calculator.png" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                  <div class="base"></div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- TAR LIST -->
-          <!-- <div class="project-container">
-            <div class="project-description-container">
-              <div class="project-title">
-                <h1>Car List App</h1>
-                <div class="code-website-links">
-                  <a href="https://github.com/nmfretz/tar-list" target="_blank">code</a>
-                  <a href="https://tar-list.netlify.app/" target="_blank">website</a>
-                </div>
-              </div>
-              <p>My first app! This is an app I developed while first learning HTML/CSS/JavaScript/Node.js.</p>
-              <p>
-                My twin toddlers (1.5 years old when I developed this app) are obsessed with vehicles, so I developed an
-                app for us to explore and store their favourites in a fun way!
-              </p>
-              <div class="project-subtitle">
-                <span>Features & Design</span>
-                <span class="hidden-on-mobile"
-                  ><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i
-                  ><i class="fa-brands fa-js-square"></i><i class="fa-brands fa-node-js"></i
-                ></span>
-              </div>
-              <ul>
-                <li>Fetches images from FLICKR API based on user search.</li>
-                <li>Express back-end server to manage API requests</li>
-                <li>In-memory cache to limit API calls</li>
-                <li>List items persist in local storage</li>
-                <li>Vanilla JavaScript and CSS (no frameworks used)</li>
-                <li>Interactive car image in header</li>
-                <li>Choose your vehicle, driver, and ranking!</li>
-              </ul>
-            </div>
-            <div class="project-img-container">
-              <div class="computer-container">
-                <div class="computer">
-                  <div class="outer-screen">
-                    <div class="inner-screen">
-                      <a href="https://tar-list.netlify.app/" target="_blank"
-                        ><img src="./img/tar-list.png" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                  <div class="base"></div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </section>
 
-      <section id="contact-section" class="section">
-        <img class="section-img" src="./img/spa-capsule-landing.png" alt="" />
-        <h1 class="section-title">Contact</h1>
-        <div class="contact-icons">
-          <a href="https://twitter.com/nmfretz" target="blank"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/nfretz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a class="copy-email" data-tooltip="click to copy email address" data-copy-email href=""
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+      <section id="contact-section" class="margin-top-900">
+        <div class="container | display-flex flex-direction-column align-items-center">
+          <img class="section-header-img" src="./img/spa-capsule-landing.png" alt="" />
+          <h1 class="fs-700 fw-semi-bold padding-400 text-uppercase">Contact</h1>
+          <ul
+            role="list"
+            aria-label="social media links"
+            class="contact-list | display-flex just align-items-center gap-600"
+          >
+            <li>
+              <a aria-label="twitter" href="https://twitter.com/nmfretz" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a aria-label="linkedin" href="https://www.linkedin.com/in/nfretz/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label="copy email to clipboard"
+                class="copy-email"
+                data-tooltip="click to copy email address"
+                data-copy-email
+                href=""
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+          <span class="padding-400">or message me below</span>
+          <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            <img src="./img/spa-dish.png" alt="" />
+            <div class="display-flex flex-direction-column">
+              <label class="margin-bottom-200" for="name">Name</label>
+              <input class="padding-300 margin-bottom-500" type="text" id="name" name="name" />
+            </div>
+            <div class="display-flex flex-direction-column">
+              <label class="margin-bottom-200" for="email">Email</label>
+              <input class="padding-300 margin-bottom-500" type="text" id="email" name="email" />
+            </div>
+            <div class="display-flex flex-direction-column">
+              <label class="margin-bottom-200" for="message">Message</label>
+              <textarea class="contact-textarea | padding-300 margin-bottom-500" id="message" name="message"></textarea>
+            </div>
+            <button class="contact-form-btn" type="submit">Send Message</button>
+          </form>
         </div>
-        <span class="or-message">or message me below</span>
-        <form class="contact-form" name="contact" method="POST" data-netlify="true">
-          <img src="./img/spa-dish.png" alt="" />
-          <div class="input-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div class="input-field">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" />
-          </div>
-          <div class="input-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
-          </div>
-          <button class="contact-form-btn" type="submit">Send Message</button>
-        </form>
       </section>
     </main>
 
-    <footer class="footer">
-      <a><img class="back-to-top-icon" src="./img/spa-rocket.png" alt="" data-back-to-top-icon /></a>
+    <footer class="display-flex flex-direction-column align-items-center">
+      <a><img class="back-to-top-img" src="./img/spa-rocket.png" alt="" data-back-to-top-icon /></a>
       <p>back to top</p>
-      <p class="attribution">
+      <p class="fs-attribution padding-top-400">
         Space-themed icons made by <a href="https://www.pixellove.com" target="_blank" title="PixelLove">PixelLove</a>
       </p>
     </footer>
