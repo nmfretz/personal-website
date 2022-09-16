@@ -1,6 +1,11 @@
 :root {
-  --clr-accent-100: #e0e0e0e0;
-  --clr-accent-500: #406177;
+  /* --clr-accent-100: #e0e0e0e0; */
+  --clr-accent-100: hsl(0, 0%, 95%);
+
+  /* --clr-accent-500: #406177; */
+  --clr-accent-500: hsl(240, 50%, 80%);
+  /* --clr-accent-500: hsl(240, 40%, 80%); */
+  --clr-accent-700: #6f6ffc;
 
   --clr-neutral-100: #fff;
   --clr-neutral-400: #999;
@@ -135,6 +140,27 @@ body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-neutral-900);
+
+  /* to prevent mobile scroll bar on animations */
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+  height: 100vh;
+}
+
+@keyframes header-title {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 /* navigation */
@@ -144,10 +170,31 @@ body {
   text-align: center;
   font-size: clamp(2.5rem, 9vw, 8rem);
   font-weight: var(--fw-regular);
+
+  animation-name: header-title;
+  animation-duration: 2s;
+}
+
+.header-title .last-name {
+  color: #6f6ffc;
+}
+
+@keyframes navigation {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .navigation {
   margin-top: clamp(1rem, 4vw, 3rem);
+  animation-name: navigation;
+  animation-duration: 1s;
 }
 
 .nav-list {
@@ -157,6 +204,10 @@ body {
 
   font-size: var(--fs-nav);
   font-weight: var(--fw-small);
+}
+
+.nav-list p {
+  color: var(--clr-neutral-100);
 }
 
 .nav-list a {
@@ -177,12 +228,61 @@ body {
   margin-left: 0.4rem;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.nav-icon:hover {
+  animation: float infinite 3s ease-in-out;
+}
+
+@keyframes scroll-text {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.scroll-text {
+  animation-name: scroll-text;
+  animation-timing-function: ease-in-out;
+  /* animation-delay: 10s; */
+  animation-duration: 3s;
+
+  color: white;
+}
+
 /* space capusule and rocket images */
+
+@keyframes capsule {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 0;
+  }
+}
 
 .scroll-down-img {
   position: relative;
+  width: 50px;
+  transform: rotate(-45deg);
+  transform-origin: center;
 
-  width: 70px;
+  animation-name: capsule;
+  animation-duration: 2s;
 }
 
 .section-header-img {
@@ -202,13 +302,46 @@ body {
   cursor: pointer;
 }
 
+@keyframes rotate-float {
+  0% {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(-45deg);
+  }
+  100% {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+}
+
+.back-to-top-img:hover {
+  animation: rotate-float infinite 3s ease-in-out;
+}
+
 /* about section */
 
+.section-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgb(111, 111, 252);
+
+  transition: 1s;
+  transition-delay: 200ms;
+  width: 0%;
+}
+
+.section-title.show::after {
+  width: 100%;
+}
+
 .about-photo {
+  position: relative;
   width: 400px;
 }
 
 .about-content {
+  position: relative;
   padding-top: 0rem;
   padding-left: var(--size-200);
   padding-right: var(--size-200);
@@ -217,6 +350,7 @@ body {
 .about-content a {
   font-weight: var(--fw-bold);
   color: inherit;
+  color: var(--clr-accent-700);
 }
 
 .about-content a:hover {
@@ -241,6 +375,7 @@ body {
 }
 
 .project-img-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,6 +385,10 @@ body {
   padding: var(--size-400);
 
   grid-area: project-image;
+
+  transition: 1s;
+  opacity: 0;
+  left: -100px;
 }
 
 .project-img-container img {
@@ -259,9 +398,20 @@ body {
 }
 
 .project-description-container {
+  position: relative;
   background-color: var(--clr-accent-100);
   width: 100%;
   padding: var(--size-600) var(--size-400);
+
+  transition: 1s;
+  opacity: 0;
+  left: 100px;
+}
+
+.project-container.show .project-img-container,
+.project-container.show .project-description-container {
+  opacity: 1;
+  left: 0;
 }
 
 .project-description-container p {
@@ -310,15 +460,18 @@ body {
 .project-title a {
   padding: var(--size-100);
   border: 1px solid black;
+  border: 1px solid var(--clr-accent-700);
 
   text-decoration: none;
-  color: inherit;
+  color: var(--clr-neutral-100);
+
+  transition: 200ms;
+  background-color: var(--clr-neutral-900);
 }
 
 .project-title a:hover {
-  border: 1px solid var(--clr-neutral-400);
-
-  color: var(--clr-neutral-400);
+  background-color: var(--clr-accent-700);
+  color: var(--clr-neutral-100);
 }
 
 .project-subtitle {
@@ -378,7 +531,7 @@ body {
 }
 
 .contact-list i:hover {
-  color: var(--clr-neutral-500);
+  color: var(--clr-accent-700);
 }
 
 .copy-email {
@@ -427,11 +580,21 @@ body {
 }
 
 .contact-form {
+  position: relative;
   background-color: var(--clr-accent-100);
   width: 100%;
   border: 1px solid black;
   margin-top: var(--size-400);
   padding: var(--size-400) var(--size-500);
+
+  transition: 1s;
+  opacity: 0;
+  top: 100px;
+}
+
+.contact-form.show {
+  opacity: 1;
+  top: 0;
 }
 
 .contact-form img {
@@ -453,16 +616,18 @@ body {
 .contact-form-btn {
   all: unset;
 
-  border: 1px solid var(--clr-neutral-900);
   padding: var(--size-200) var(--size-400);
+  cursor: pointer;
+
+  border: 1px solid var(--clr-accent-700);
+  color: var(--clr-neutral-100);
+
+  transition: 200ms;
+  background-color: var(--clr-neutral-900);
 }
 
 .contact-form-btn:hover {
-  border-color: var(--clr-neutral-400);
-
-  color: var(--clr-neutral-400);
-
-  cursor: pointer;
+  background-color: var(--clr-accent-700);
 }
 
 @media (min-width: 50em) {
@@ -470,6 +635,10 @@ body {
     width: 600px;
     padding: var(--size-600) var(--size-800);
   }
+}
+
+footer a {
+  color: var(--clr-neutral-700);
 }
 
 /* computer for project images */
@@ -530,8 +699,6 @@ body {
 }
 
 /* UTILITY CLASSES */
-
-/* GO THROUGH AND DELETE WHAT IS NOT NEEDED */
 
 .container {
   padding-left: var(--size-400);

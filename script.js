@@ -1,18 +1,28 @@
-const PX_TO_REM = 16;
-const SCROLL_ICON_END_REM = 36; // position of scrollDownIconBottom in rem
-
 const scrollDownIconTop = document.querySelector("[data-scroll-down-icon-top]");
 const scrollDownIconBottom = document.querySelector("[data-scroll-down-icon-bottom]");
 const scrollDownText = document.querySelector("[data-scroll-down-text]");
+
+let aboutTitleElement = document.querySelector("[data-about-title]");
+let aboutTitleDistanceToTop = window.pageYOffset + aboutTitleElement.getBoundingClientRect().top;
+
+let scrollTextElement = document.querySelector(".scroll-text");
+let scrollTextDistanceToTop = window.pageYOffset + scrollTextElement.getBoundingClientRect().top;
+let pxToScroll = aboutTitleDistanceToTop - scrollTextDistanceToTop;
+
+window.addEventListener("resize", (e) => {
+  aboutTitleDistanceToTop = window.pageYOffset + aboutTitleElement.getBoundingClientRect().top;
+  scrollTextDistanceToTop = window.pageYOffset + scrollTextElement.getBoundingClientRect().top;
+  pxToScroll = aboutTitleDistanceToTop - scrollTextDistanceToTop;
+});
 
 // TWO DIFFERENT METHODS FOR ANIMATING THE CAPSULE ON SCROLL
 // 1) requestAnimationFrame
 function scrollCapsule() {
   let scrollOffset = window.pageYOffset;
-  scrollDownIconTop.style.transform = `translateY(${scrollOffset / PX_TO_REM}rem)`;
+  scrollDownIconTop.style.transform = `translateY(${scrollOffset}px) rotate(-45deg)`;
   scrollDownText.style.opacity = -scrollOffset / 75 + 1;
 
-  if (scrollOffset >= SCROLL_ICON_END_REM * PX_TO_REM) {
+  if (scrollOffset >= pxToScroll) {
     scrollDownIconTop.classList.add("visibility-hidden");
     scrollDownIconBottom.classList.remove("visibility-hidden");
   } else {
@@ -48,6 +58,36 @@ backToTopIcons.forEach((icon) => {
 //     scrollDownIconBottom.classList.add("visibility-hidden");
 //   }
 // });
+
+const projects = document.querySelectorAll(".project-container");
+const sectionTitles = document.querySelectorAll(".section-title");
+const contactForm = document.querySelector(".contact-form");
+
+const observerOptions = {
+  threshold: 0.1,
+};
+
+const infiniteObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("show", entry.isIntersecting);
+  });
+}, observerOptions);
+
+[...sectionTitles].forEach((title) => {
+  infiniteObserver.observe(title);
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("show", entry.isIntersecting);
+    if (entry.isIntersecting) observer.unobserve(entry.target);
+  });
+}, observerOptions);
+
+observer.observe(contactForm);
+[...projects].forEach((project) => {
+  observer.observe(project);
+});
 
 const copyEmailElement = document.querySelector("[data-copy-email]");
 
