@@ -16,8 +16,26 @@ window.addEventListener("resize", (e) => {
 });
 
 // TWO DIFFERENT METHODS FOR ANIMATING THE CAPSULE ON SCROLL
+
 // 1) requestAnimationFrame
-function scrollCapsule() {
+// function scrollCapsule() {
+//   let scrollOffset = window.pageYOffset;
+//   scrollDownIconTop.style.transform = `translateY(${scrollOffset}px) rotate(-45deg)`;
+//   scrollDownText.style.opacity = -scrollOffset / 75 + 1;
+
+//   if (scrollOffset >= pxToScroll) {
+//     scrollDownIconTop.classList.add("visibility-hidden");
+//     scrollDownIconBottom.classList.remove("visibility-hidden");
+//   } else {
+//     scrollDownIconTop.classList.remove("visibility-hidden");
+//     scrollDownIconBottom.classList.add("visibility-hidden");
+//   }
+//   window.requestAnimationFrame(scrollCapsule);
+// }
+// window.requestAnimationFrame(scrollCapsule);
+
+// 2) scroll addEventListener
+window.addEventListener("scroll", (e) => {
   let scrollOffset = window.pageYOffset;
   scrollDownIconTop.style.transform = `translateY(${scrollOffset}px) rotate(-45deg)`;
   scrollDownText.style.opacity = -scrollOffset / 75 + 1;
@@ -29,9 +47,7 @@ function scrollCapsule() {
     scrollDownIconTop.classList.remove("visibility-hidden");
     scrollDownIconBottom.classList.add("visibility-hidden");
   }
-  window.requestAnimationFrame(scrollCapsule);
-}
-window.requestAnimationFrame(scrollCapsule);
+});
 
 const backToTopIcons = [...document.querySelectorAll("[data-back-to-top-icon]")];
 backToTopIcons.forEach((icon) => {
@@ -39,25 +55,6 @@ backToTopIcons.forEach((icon) => {
     window.scroll({ top: 0, behavior: "smooth" });
   });
 });
-
-// backToTopIcon.addEventListener("click", (e) => {
-//   window.scroll({ top: 0, behavior: "smooth" });
-// });
-
-// 2) scroll addEventListener
-// window.addEventListener("scroll", (e) => {
-//   let scrollOffset = window.pageYOffset;
-//   scrollDownIconTop.style.transform = `translateY(${scrollOffset / PX_TO_REM}rem)`;
-//   scrollDownText.style.opacity = -scrollOffset / 75 + 1;
-
-//   if (scrollOffset >= SCROLL_ICON_END_REM * PX_TO_REM) {
-//     scrollDownIconTop.classList.add("visibility-hidden");
-//     scrollDownIconBottom.classList.remove("visibility-hidden");
-//   } else {
-//     scrollDownIconTop.classList.remove("visibility-hidden");
-//     scrollDownIconBottom.classList.add("visibility-hidden");
-//   }
-// });
 
 const projects = document.querySelectorAll(".project-container");
 const sectionTitles = document.querySelectorAll(".section-title");
