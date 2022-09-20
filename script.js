@@ -77,6 +77,10 @@ const infiniteObserver = new IntersectionObserver((entries) => {
   infiniteObserver.observe(title);
 });
 
+// [...projects].forEach((project) => {
+//   infiniteObserver.observe(project);
+// });
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     entry.target.classList.toggle("show", entry.isIntersecting);
