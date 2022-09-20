@@ -136,12 +136,15 @@ svg {
 }
 
 /* GENERAL STYLING */
+
 body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-neutral-900);
+}
 
-  /* to prevent mobile scroll bar on animations */
+.site-container {
+  /* to prevent mobile horizontal scroll bar on animations */
   overflow-x: hidden;
 }
 
@@ -638,7 +641,7 @@ header {
 }
 
 footer a {
-  color: var(--clr-neutral-700);
+  color: var(--clr-accent-700);
 }
 
 /* computer for project images */
