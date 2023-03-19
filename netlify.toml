@@ -1,7 +1,8 @@
 [[redirects]]
   from = "/.well-known/lnurlp/*"
   to = "https://ln.tips/.well-known/lnurlp/0x28310b736222ebb5"
-  status = 301
+  # Netlify does not support 307 status code
+  status = 302
   force = true
 
 [[headers]]
