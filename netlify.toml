@@ -1,0 +1,7 @@
+[[redirects]]
+  from = "/.well-known/lnurlp/*"
+  to = "https://ln.tips/.well-known/lnurlp/0x28310b736222ebb5"
+  status = 302
+  force = true
+  [redirects.headers]
+    Access-Control-Allow-Origin = "*"
