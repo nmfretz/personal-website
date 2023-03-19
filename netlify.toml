@@ -3,5 +3,8 @@
   to = "https://ln.tips/.well-known/lnurlp/0x28310b736222ebb5"
   status = 301
   force = true
-  [redirects.headers]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
     Access-Control-Allow-Origin = "*"
