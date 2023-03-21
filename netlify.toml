@@ -1,3 +1,8 @@
+[build]
+  publish = "dist"
+  ignore = "false"
+  command = "parcel build index.html && cp -r .well-known dist/"
+
 [[redirects]]
   from = "/.well-known/lnurlp/*"
   to = "https://ln.tips/.well-known/lnurlp/0x28310b736222ebb5"
