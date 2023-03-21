@@ -2,8 +2,7 @@ node_modules
 
 # parcel files
 .parcel-cache
-dist/*
-!dist/_redirects
+dist
 
 # misc
 TODO.md
