@@ -5,6 +5,11 @@
   status = 302
   force = true
 
+[[redirects]]
+  from = "/.well-known/nostr.json"
+  to = "/.well-known/nostr.json"
+  query = { name = "_" }
+
 [[headers]]
   for = "/*"
   [headers.values]
