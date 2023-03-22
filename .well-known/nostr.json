@@ -1,5 +1,16 @@
 {
   "names": {
     "_": "def9a8b4d3eb250f40361430b37b7ae21eefc37ef8809286b75e157f6e628518"
+  },
+  "relays": {
+    "def9a8b4d3eb250f40361430b37b7ae21eefc37ef8809286b75e157f6e628518": [
+      "wss://relay.damus.io",
+      "wss://brb.io",
+      "wss://nostr.lu.ke",
+      "wss://nostr.v0l.io",
+      "wss://nostr.bitcoiner.social",
+      "wss://nostr.orangepill.dev",
+      "wss://relay.snort.social"
+    ]
   }
 }
